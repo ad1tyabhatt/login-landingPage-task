@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+
+/* Colors and Sizes */
+
+:root {
+   --background-primary: #1da1f2;
+   --background-secondary: #ffffff;
+   --background-light: #482be7;
+   --background-main: #2f1893;
+   --background-alternate: #ebeaed;
+   --background-buttons: #e93a7d;
+   --background-gray: rgb(182, 179, 179);
+   --background-alter: #25dac5;
+   --font-family-light: 200;
+   --font-family-normal: 400;
+   --font-family-semibold: 500;
+   --font-family-bold: 700;
+   --font-family-highbold: 800;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "DM Sans", sans-serif;
+}
+
+/* Main Container */
+
+.container {
+   padding: 3rem 8rem;
+   background-color: var(--background-main);
+}
+
+/* HEADER */
+
+header {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+/* Left-Header */
+
+.header-left {
+   font-weight: var(--font-family-bold);
+   font-size: 1.5rem;
+}
+
+/* Right Header */
+
+.header-right {
+   display: flex;
+   gap: 45px;
+   font-size: 18px;
+   align-items: center;
+   text-align: center;
+   font-weight: 500;
+}
+
+/* Generic Classes */
+
+.white {
+   color: var(--background-secondary);
+}
+
+a {
+   text-decoration: none;
+}
+
+
+a:hover {
+   color: var(--background-light);
+}
+
+.pink {
+   background-color: var(--background-buttons);
+}
+
+.pink:hover {
+   background-color: rgb(179, 7, 113);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.big-font {
+  font-size: 58px;
+}
+
+/* purchase Button */
+
+.purchase {
+   height: 40px;
+   font-size: 18px;
+   width: 120px;
+   border-radius: 1.4rem;
+   border: none;
+   padding: 0.2em 0.8em;
+}
+
+
+/* Left Container */
+
+nav {
+   display: flex;
+   flex-direction: row;
+   padding-top: 4rem;
+}
+
+.left-nav {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 50%;
+   padding-right: 5rem;
+   justify-content: left;
+   padding-top: 2rem;
+   gap: 2rem 0;
+}
+
+.left-nav > p {
+   font-size: 22px;
+   padding-right: 5rem;
+}
+
+
+.learn-more {
+   height: 50px;
+   width: 157px;
+   border-radius: 1.6rem;
+   border: none;
+   font-size: 18px;
+}
+
+
+/* Right Container */
+
+.right-nav {
+   display: flex;
+   width: 50%;
+   flex-direction: column;
+   flex-wrap: wrap;
+   text-align: center;
+   padding: 3rem 5rem;
+   gap: 1.2rem;
+   background-color: var(--background-secondary);
+   border-radius: 0.4rem;
+}
+
+.right-nav > h1 {
+   font-size: 42px;
+   padding-bottom: 1rem;
+}
+
+.right-nav > input {
+   height: 50px;
+   width: 330px;
+   border: 2px solid var(--background-alternate);
+   padding-left: 20px;
+   border-radius: 3rem;
+}
+
+.right-nav > input:hover{
+  border: 2px solid  var(--background-light) ;
+}
+
+::placeholder {
+   position: relative;
+   color: var(--background-gray);
+   font-weight: var(--font-family-semibold);
+   font-size: 16px;
+   text-align: left;
+   align-items: center;
+}
+
+.term-and-services > input[type="checkbox"] {
+   accent-color: var(--background-alter);
+   mix-blend-mode: multiply;
+   height: 20px;
+   width: 20px;
+   position: relative;
+   top: 4px;
+   font-weight: var(--font-family-light);
+   margin-right: 5px;
+}
+.term-and-services {
+   text-align: left;
+   color: var(--background-gray);
+   margin: auto 0;
+}
+
+.large-button {
+   height: 50px;
+   border-radius: 1.5rem;
+   font-size: 18px;
+   font-weight: var(--font-family-semibold);
+   border: none;
+   color: white;
+}
+
+.sign-in {
+   background-color: var(--background-main);
+}
+.sign-in:hover{
+  background-color: #482be7;
+}
+
+.twitter {
+   background-color: var(--background-primary);
+}
+
+.twitter:hover{
+  background-color:#058feb;
+}
+
+.or-div {
+   width: 100%;
+   text-align: center;
+   color: var(--background-gray);
+   border-bottom: 1px solid var(--background-alternate);
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+.account-confirmation {
+   font-weight: var(--font-family-semibold);
+}
+
+.account-confirmation > a {
+   color: var(--background-alter);
+}
+.grey {
+   color: var(--background-gray);
+}
+
+.or-div span {
+   background: #fff;
+   padding: 0 10px;
+}
+
+/* *
+RESPONSIVE DESIGN
+Didn't completed Since details was not specified
+
+*/
+
+
+
+
+@media screen and (max-width: 1100px) {
+   .container {
+      background-color: red;
+   }
+   header,
+   .header-left,
+   .header-right,
+   nav {
+      flex-direction: column;
+   }
+   nav {
+      font-size: 0.4em;
+   }
+   .header-left {
+      display: none;
+   }
+}
+
+/* *
+  1100
+
+
+*/
